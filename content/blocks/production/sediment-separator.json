@@ -1,0 +1,31 @@
+{
+  "type": "GenericCrafter",
+  "drawer": [
+    {
+
+    }
+    {
+      "type": "DrawGlowRegion",
+      "suffix": "-warm"
+    }
+  ],
+  "size": 3,
+  "hasItems": true,
+  "itemCapacity": 20,
+  "craftTime": 120,
+  "squareSprite": false,
+  "craftEffect": "smeltsmoke",
+  "consumes": {
+    "items": [
+      "water-alloy/10"
+    ]
+  },
+  "requirements": [
+    "water-alloy/100"
+  ],
+  "category": "crafting",
+  "outputItems": [
+    "purified-steel/6",
+    "nichrome/1"
+  ]
+}
