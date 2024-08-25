@@ -1,0 +1,90 @@
+{
+  "type": "ItemTurret",
+  "size": 1,
+  "squareSprite": false,
+  "health": 190,
+  "inaccuracy": 5.0,
+  "targetAir": false,
+  "targetGround": true,
+  "drawer": {
+    "type": "drawTurret",
+    "heatPrefix": "-heat"
+    },
+  "reload": 35,
+  "range": 120,
+  "maxAmmo": 10,
+  "recoil": 0.7,
+  "rotateSpeed": 5,
+  "ammoTypes": {
+    "water-alloy": {
+      "range": 40,
+      "type": "BasicBulletType",
+      "ammoMultiplier": 2,
+      "speed": 4,
+      "lifetime": 30,
+      "reloadMultiplier": 1,
+      "damage": 3,
+      "height": 9,
+      "width": 9,
+      "despawnHit": true,
+      "frontColor": "56d796",
+      "backColor": "26be54",
+      "inaccuracy": 4.0,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "lifetime": 20,
+        "damage": 2,
+        "height": 6,
+        "width": 6,
+        "frontColor": "56d796",
+        "backColor": "26be54"
+      },
+      "fragRandomSpread": 45,
+      "fragBullets": 5
+    },
+    "purified-steel": {
+      "type": "BasicBulletType",
+      "range": 50,
+      "speed": 2,
+      "lifetime": 60,
+      "reloadMultiplier": 1,
+      "damage": 7,
+      "height": 12,
+      "width": 12,
+      "despawnHit": true,
+      "frontColor": "95abd9",
+      "backColor": "7a8cdc",
+      "inaccuracy": 2.0,
+      "fragBullet": {
+        "type": "BasicBulletType",
+        "lifetime": 5,
+        "damage": 5,
+        "height": 3,
+        "width": 2,
+        "frontColor": "95abd9",
+        "backColor": "7a8cdc",
+        "range": 30,
+        "speed": 4,
+        "fragBullet": {
+          "type": "BasicBulletType",
+          "lifetime": 5,
+          "damage": 3,
+          "height": 3,
+          "width": 2,
+          "frontColor": "95abd9",
+          "backColor": "7a8cdc",
+          "range": 30,
+          "speed": 5
+        },
+        "fragBullets": 2,
+        "fragRandomSpread": 45
+      },
+      "fragBullets": 2,
+      "fragRandomSpread": 45,
+    }
+  },
+  "requirements": [
+    "water-alloy/40"
+  ],
+  "category": "turret"
+}
